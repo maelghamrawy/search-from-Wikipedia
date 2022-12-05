@@ -34,39 +34,7 @@ useEffect(() => {
 },[debounceSearch])
 
 
-  // useEffect(() => {
 
-  //   const search = async () => {
-  //     const respons = await axios.get("https://en.wikipedia.org/w/api.php", {
-  //       params: {
-  //         action: "query",
-  //         list: "search",
-  //         origin: "*",
-  //         format: "json",
-  //         srsearch: term,
-  //       },
-  //     })
-  //     setResult(respons.data.query.search)
-  //   }
-
-  //   if (!result.length){
-  //     if (term) {
-  //       search()
-  //     }
-  //   }else{
-  //     const debounceSearch = setTimeout(() => {
-  //       if (term) {
-  //         search()
-  //       }
-  //     }, 1000);
-  
-  //     return () =>{
-  //       clearTimeout(debounceSearch)
-  //      }
-  //   }
-   
-
-  // }, [term,result.length])
 
   const fetchResult = result.map((el) => {
     return(
